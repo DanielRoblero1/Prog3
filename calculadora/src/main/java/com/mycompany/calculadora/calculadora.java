@@ -17,6 +17,7 @@ String sig;
      */
     public calculadora() {
         initComponents();
+this.setLocationRelativeTo(null);
     }
 
     /**
@@ -73,6 +74,11 @@ String sig;
         });
 
         jButton3.setText("-");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("/");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -96,6 +102,11 @@ String sig;
         });
 
         jButton7.setText("+");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         jButton8.setText("9");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
@@ -154,6 +165,11 @@ String sig;
         });
 
         jButton19.setText("=");
+        jButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton19ActionPerformed(evt);
+            }
+        });
 
         jButton15.setText("ln");
 
@@ -336,6 +352,41 @@ num1=Integer.parseInt(resul.getText());
 sig="*";
 resul.setText("");
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+num1=Integer.parseInt(resul.getText());
+sig="-";
+resul.setText("");
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+num1=Integer.parseInt(resul.getText());
+sig="+";
+resul.setText("");
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+        // TODO add your handling code here:
+num2=Integer.parseInt(resul.getText());
+
+switch(sig){
+case "+":
+resul.setText(Integer.toString(num1+num2));
+break;
+case "-":
+resul.setText(Integer.toString(num1-num2));
+break;
+case "*":
+resul.setText(Integer.toString(num1*num2));
+break;
+case "/":
+resul.setText(Integer.toString(num1/num2));
+break;
+}
+
+    }//GEN-LAST:event_jButton19ActionPerformed
 
     /**
      * @param args the command line arguments
