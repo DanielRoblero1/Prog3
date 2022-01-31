@@ -11,7 +11,7 @@ package com.mycompany.calculadora;
 public class calculadora extends javax.swing.JFrame {
 
 int num1,num2;
-double ,fun;
+float fun;
 String sig;
     /**
      * Creates new form calculadora
@@ -424,7 +424,7 @@ case "x²":
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         // TODO add your handling code here:
 num1=Integer.parseInt(resul.getText());
-fun=(int) Math.pow(num1, 2);
+fun=(float) Math.pow(num1, 2);
 
 resul.setText(Double.toString(fun));
 
@@ -433,9 +433,9 @@ resul.setText(Double.toString(fun));
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
         // TODO add your handling code here:
 num1=Integer.parseInt(resul.getText());
-fun=(int) Math.log(num1);
+fun=(float) Math.log(num1);
 
-resul.setText(Double.toString(fun+1));
+resul.setText(Double.toString(fun));
     }//GEN-LAST:event_jButton15ActionPerformed
 
     /**
