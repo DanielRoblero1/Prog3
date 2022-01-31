@@ -10,6 +10,8 @@ package com.mycompany.calculadora;
  */
 public class calculadora extends javax.swing.JFrame {
 
+int num1,num2;
+String sig;
     /**
      * Creates new form calculadora
      */
@@ -68,6 +70,11 @@ public class calculadora extends javax.swing.JFrame {
         jButton3.setText("-");
 
         jButton4.setText("/");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jButton5.setText("7");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -310,6 +317,13 @@ resul.setText(resul.getText()+"9");
         // TODO add your handling code here:
 resul.setText("");
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+num1=Integer.parseInt(resul.getText());
+sig="/";
+resul.setText("");
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
