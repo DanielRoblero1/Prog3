@@ -11,6 +11,7 @@ package com.mycompany.calculadora;
 public class calculadora extends javax.swing.JFrame {
 
 int num1,num2;
+double ,fun;
 String sig;
     /**
      * Creates new form calculadora
@@ -59,6 +60,8 @@ this.setLocationRelativeTo(null);
         resul.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 204), 1, true));
         resul.setOpaque(true);
 
+        jButton1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jButton1.setForeground(java.awt.Color.red);
         jButton1.setText("C");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -66,6 +69,7 @@ this.setLocationRelativeTo(null);
             }
         });
 
+        jButton2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton2.setText("X");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -73,6 +77,7 @@ this.setLocationRelativeTo(null);
             }
         });
 
+        jButton3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton3.setText("-");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,6 +85,7 @@ this.setLocationRelativeTo(null);
             }
         });
 
+        jButton4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton4.setText("/");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,6 +93,7 @@ this.setLocationRelativeTo(null);
             }
         });
 
+        jButton5.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton5.setText("7");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,6 +101,7 @@ this.setLocationRelativeTo(null);
             }
         });
 
+        jButton6.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton6.setText("8");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,6 +109,7 @@ this.setLocationRelativeTo(null);
             }
         });
 
+        jButton7.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton7.setText("+");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -108,6 +117,7 @@ this.setLocationRelativeTo(null);
             }
         });
 
+        jButton8.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton8.setText("9");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -115,6 +125,7 @@ this.setLocationRelativeTo(null);
             }
         });
 
+        jButton9.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton9.setText("4");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -122,6 +133,7 @@ this.setLocationRelativeTo(null);
             }
         });
 
+        jButton10.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton10.setText("5");
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,6 +141,7 @@ this.setLocationRelativeTo(null);
             }
         });
 
+        jButton12.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton12.setText("6");
         jButton12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -136,6 +149,7 @@ this.setLocationRelativeTo(null);
             }
         });
 
+        jButton13.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton13.setText("1");
         jButton13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -143,6 +157,7 @@ this.setLocationRelativeTo(null);
             }
         });
 
+        jButton14.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton14.setText("2");
         jButton14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -150,6 +165,7 @@ this.setLocationRelativeTo(null);
             }
         });
 
+        jButton16.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton16.setText("3");
         jButton16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -157,6 +173,7 @@ this.setLocationRelativeTo(null);
             }
         });
 
+        jButton18.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton18.setText("0");
         jButton18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -164,6 +181,8 @@ this.setLocationRelativeTo(null);
             }
         });
 
+        jButton19.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jButton19.setForeground(java.awt.Color.red);
         jButton19.setText("=");
         jButton19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -171,9 +190,21 @@ this.setLocationRelativeTo(null);
             }
         });
 
+        jButton15.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton15.setText("ln");
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
 
+        jButton17.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton17.setText("x²");
+        jButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton17ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -384,9 +415,28 @@ break;
 case "/":
 resul.setText(Integer.toString(num1/num2));
 break;
+case "x²":
+
 }
 
     }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+        // TODO add your handling code here:
+num1=Integer.parseInt(resul.getText());
+fun=(int) Math.pow(num1, 2);
+
+resul.setText(Double.toString(fun));
+
+    }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        // TODO add your handling code here:
+num1=Integer.parseInt(resul.getText());
+fun=(int) Math.log(num1);
+
+resul.setText(Double.toString(fun+1));
+    }//GEN-LAST:event_jButton15ActionPerformed
 
     /**
      * @param args the command line arguments
