@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-02-2022 a las 06:21:19
+-- Tiempo de generación: 08-02-2022 a las 18:08:17
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.1.1
 
@@ -120,7 +120,7 @@ ALTER TABLE `usuario`
 -- Indices de la tabla `usuarioperfil`
 --
 ALTER TABLE `usuarioperfil`
-  ADD KEY `perfid` (`perfid`),
+  ADD PRIMARY KEY (`perfid`,`usucodigo`),
   ADD KEY `usucodigo` (`usucodigo`);
 
 --
